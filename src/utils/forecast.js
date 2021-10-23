@@ -17,6 +17,7 @@ const forecast = (longitude, latitude, callback) => {
                 feelsLike,
                 description: body.current.weather_descriptions,
                 precip: body.current.precip,
+                cloudcover: body.current.cloudcover,
                 humidity: body.current.humidity,
                 time: body.current.observation_time,
                 region: body.location.region,

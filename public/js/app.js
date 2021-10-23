@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 messageOne.textContent = data.error
             } else {
-                let theBlurb = "Current temperature is " + data.forecast.currentTemp + "°C as of " + data.forecast.time + '. If you look outside it should be ' + (data.forecast.description).toString().toLowerCase() + '.'
+                let theBlurb = "Current temperature is " + data.forecast.currentTemp + "°C as of " + data.forecast.time + '. If you look outside it should be ' + (data.forecast.description).toString().toLowerCase() + ' (' + data.forecast.cloudcover + '% cloud cover).'
 
                 messageOne.textContent = data.location
                 messageTwo.textContent = theBlurb
